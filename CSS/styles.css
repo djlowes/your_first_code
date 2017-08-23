@@ -1,0 +1,266 @@
+/* Importing webfonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:600|Raleway');
+
+
+/* Background */
+html
+{
+        background-color: #DCDCDC;
+}
+
+/* Header & Navigation */
+header {
+        font-family: 'Raleway', sans-serif;
+        background-color: #FFFFFF;
+        border-top-width:20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style:none;
+        text-align:left;
+        border-radius: 25px;
+        padding-left: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 60px;
+}
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+.fb-share-button {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        bottom: 4px;
+        margin-top: 0px;
+        padding-top: 0px;
+}
+.twitter-share-button {
+        position: static;
+        visibility: visible;
+        width: 76px;
+        height: 28px;
+        margin-top: 15px;
+        padding-top: 0px;
+}
+
+nav ul {
+        padding-top: 20px
+        /* new code */
+        list-style: none;
+     	  position: relative;
+}
+nav ul li {
+        /* new code */
+        display:inline-block;
+        float: left;
+        background-color: #FFFFFF;
+}
+nav a {
+        padding: 20px 20px 20px 5px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        /* new code */
+        display:block;
+}
+nav a:hover {
+        /*border-radius: 15px;*/
+        background-color: #696969;
+        color: white;
+        transition: 0.3s;
+        /*padding: 10px*/
+}
+
+nav ul ul {
+        display: none;
+	      position: absolute;
+/* has to be the same number as the "line-height" of "nav a" */
+      top: 60px;
+}
+        nav:after {
+        content:"";
+        display:table;
+        clear:both;
+}
+
+nav ul li:hover > ul {
+	      display:inherit;
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+nav {
+		    margin: 0;
+}
+
+/* Hide the navigation menu by default */
+.toggle + a,
+.menu {
+		    display: none;
+}
+
+/* Styling the toggle lable */
+.toggle {
+		    display: block;
+		    background-color: #EAECEE;
+		    padding:14px 20px;
+		    color:#696969;
+		    font-size:17px;
+		    text-decoration:none;
+		    /*border:none;*/
+        border-color: #FFFFFF
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style:none;
+        text-align:center;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 60px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+}
+.toggle:hover {
+		    background-color: #000000;
+}
+
+[id^=drop]:checked + ul {
+		    display: block;
+}
+nav ul li {
+		    display: block;
+		    width: 100%;
+}
+
+nav ul ul .toggle,
+nav ul ul a {
+		    padding: 0 40px;
+}
+
+nav ul ul ul a {
+	      padding: 0 80px;
+}
+
+nav a:hover,
+nav ul ul ul a {
+		    background-color: #000000;
+}
+
+nav ul li ul li .toggle,
+nav ul ul a,
+nav ul ul ul a {
+		    padding:14px 20px;
+		    color:#FFF;
+	      font-size:17px;
+}
+nav ul li ul li .toggle,
+nav ul ul a {
+		    background-color: #212121;
+}
+}
+
+
+
+/* Body text and heading styles */
+body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        line-height: 120%;
+        -moz-font-smoothing: antialiased;
+}
+.alttext1 {
+        font-family: 'Poppins', sans-serif;
+}
+.alttext2 {
+        font-size: 80%;
+        font-style: italic;
+}
+.alttext3 {
+        font-size: 100%;
+        font-family: 'Poppins', sans-serif;
+}
+h1
+{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        line-height: 100%;
+}
+
+.h11 {
+        font-family: 'Raleway', sans-serif;
+}
+
+.h12 {
+        font-family: 'Poppins', sans-serif;
+}
+h2
+{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 100%;
+}
+h3
+{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 100%;
+}
+
+
+/* Main Layout - Body*/
+main {
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+}
+article {
+        background-color: #FFFFFF;
+        flex: 2;
+        overflow-y: auto;
+        padding-top: 30px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+}
+
+.line1 {
+        padding-right: 15px;
+}
+aside {
+        flex: 1;
+        overflow-y: auto;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+}
+/* Who Page*/
+
+.headshot {
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 185px;
+        width: 185px:
+        max-height: 185px;
+        max-height: 185px;
+        max-width: 185px;
+        border-radius: 20px;
+
+}
+.heading {
+  padding-left: 25px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+h4
+{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 20%;
+}
